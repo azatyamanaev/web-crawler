@@ -19,6 +19,7 @@ public class Crawler {
     private static List<String> links;
     private static Integer num = 100;
 
+//    инициализация массива ссылок links по файлу /downloads/links.txt
     static {
         try {
             links = new ArrayList<>();
@@ -35,6 +36,7 @@ public class Crawler {
         }
     }
 
+//    проход по массиву links, для каждой ссылки создается файл /downloads/out_number в который записывается текст веб-страницы, где number - номер ссылки/строки в файле /downloads/links.txt
     public static void main(String[] args) {
         String name;
         int number = 1;
