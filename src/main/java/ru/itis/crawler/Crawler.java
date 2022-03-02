@@ -22,7 +22,7 @@ public class Crawler {
     static {
         try {
             links = new ArrayList<>();
-            BufferedReader reader = new BufferedReader(new FileReader("./links.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("./downloads/links.txt"));
             String line = reader.readLine();
             int i = 1;
             while (i <= 100) {
