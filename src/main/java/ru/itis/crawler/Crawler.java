@@ -36,7 +36,7 @@ public class Crawler {
         }
     }
 
-//    проход по массиву links, для каждой ссылки создается файл /downloads/out_number в который записывается текст веб-страницы, где number - номер ссылки/строки в файле /downloads/links.txt
+//    проход по массиву links, для каждой ссылки создается файл /downloads/out{number}.txt в который записывается текст веб-страницы, где number - номер ссылки/строки в файле /downloads/links.txt
     public static void main(String[] args) {
         String name;
         int number = 1;
